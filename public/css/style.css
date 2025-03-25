@@ -1,0 +1,66 @@
+/* Custom styles for What The Quiz */
+
+/* Quiz card hover effect */
+.quiz-card {
+    transition: transform 0.2s ease-in-out;
+}
+
+.quiz-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Custom button styles */
+.btn-primary {
+    @apply bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition-colors duration-200;
+}
+
+.btn-secondary {
+    @apply bg-white text-gray-700 px-4 py-2 rounded-md border border-gray-300 hover:bg-gray-50 transition-colors duration-200;
+}
+
+/* Form styles */
+.form-input {
+    @apply mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500;
+}
+
+.form-label {
+    @apply block text-sm font-medium text-gray-700;
+}
+
+/* Quiz question styles */
+.question-container {
+    @apply bg-white p-6 rounded-lg shadow-md mb-6;
+}
+
+.answer-option {
+    @apply mt-4 p-4 border rounded-md cursor-pointer hover:bg-gray-50 transition-colors duration-200;
+}
+
+.answer-option.selected {
+    @apply border-indigo-500 bg-indigo-50;
+}
+
+/* Progress bar */
+.progress-bar {
+    @apply w-full bg-gray-200 rounded-full h-2.5;
+}
+
+.progress-bar-fill {
+    @apply bg-indigo-600 h-2.5 rounded-full transition-all duration-300;
+}
+
+/* Flash message animations */
+.flash-message {
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+} 
